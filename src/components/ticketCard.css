@@ -1,0 +1,117 @@
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin:10px;
+    width: 285px;
+    max-width: 285px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 0px;/ */
+}
+
+.card-id {
+    color: #666;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.card-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 10px;
+    font-weight: bold;
+    /* margin-bottom: 16px; */
+    margin-left: 3px;
+    word-wrap: break-word;
+}
+
+.card-tag {
+    display: inline-flex;
+    align-items: center;
+    /* background-color: #f5f5f5; */
+    border: solid 1px #ebebeb;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 6px 10px;
+    /* margin-bottom: 0px; */
+}
+
+.card-tag-icon {
+    background-color: #ababab;
+    color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.card-tag-text {
+    color: #666;
+    font-size: 12px;
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: 16px;
+    }
+
+    .card-id {
+        font-size: 16px;
+    }
+
+    .card-avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-tag {
+        padding: 6px 12px;
+    }
+
+    .card-tag-icon {
+        width: 16px;
+        height: 16px;
+        font-size: 12px;
+    }
+
+    .card-tag-text {
+        font-size: 12px;
+    }
+}
+
+.priority{
+  margin:3px;
+  /* padding:2px; */
+  padding-top:3px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  border-radius: 5px;
+  border: solid 2px #ebebeb;
+  /* border: 1px solid #ababab; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
