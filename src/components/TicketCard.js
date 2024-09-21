@@ -4,14 +4,14 @@ import './ticketCard.css'
 
 const priorityIcons = {
   0: '/icons/icons_FEtask/No-priority.svg',
-  1: '/icons/icons_FEtask/Low_priority.svg',
-  2: '/icons/icons_FEtask/Medium_priority.svg',
-  3: '/icons/icons_FEtask/High_priority.svg',
+  1: '/icons/icons_FEtask/Low_Priority.svg',
+  2: '/icons/icons_FEtask/Medium_Priority.svg',
+  3: '/icons/icons_FEtask/High_Priority.svg',
   4: '/icons/icons_FEtask/Urgent_Priority_grey.svg',
 };
 
 const statusIcons = {
-  Todo: '/icons/icons_FEtask/to-do.svg',
+  Todo: '/icons/icons_FEtask/To-do.svg',
   Inprogress: '/icons/icons_FEtask/in-progress.svg',
   Backlog: '/icons/icons_FEtask/Backlog.svg',
   Done: '/icons/icons_FEtask/Done.svg',

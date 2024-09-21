@@ -3,14 +3,14 @@ import TicketCard from './TicketCard'; // Component to display individual ticket
 
 const priorityIcons = {
   0: '/icons/icons_FEtask/No-priority.svg',
-  1: '/icons/icons_FEtask/Low_priority.svg',
-  2: '/icons/icons_FEtask/Medium_priority.svg',
-  3: '/icons/icons_FEtask/High_priority.svg',
+  1: '/icons/icons_FEtask/Low_Priority.svg',
+  2: '/icons/icons_FEtask/Medium_Priority.svg',
+  3: '/icons/icons_FEtask/High_Priority.svg',
   4: '/icons/icons_FEtask/Urgent_Priority_colour.svg',
 };
 
 const statusIcons = {
-  Todo: '/icons/icons_FEtask/to-do.svg',
+  Todo: '/icons/icons_FEtask/To-do.svg',
   Inprogress: '/icons/icons_FEtask/in-progress.svg',
   Backlog: '/icons/icons_FEtask/Backlog.svg',
   Done: '/icons/icons_FEtask/Done.svg',
@@ -37,11 +37,12 @@ const KanbanColumn = ({ title, tickets, count, groupBy }) => {
       <div className="titleHead">
         <h3 style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className='titlecol'>
           {priorityIcon && (
-            <img
+            <span
               src={priorityIcon}
               alt={`Priority ${displayTitle}`}
               style={{ width: '20px', height: '20px', marginRight: '8px' }}
-            />
+            >
+              </span>
           )}
           {statusIcon && (
             <img
