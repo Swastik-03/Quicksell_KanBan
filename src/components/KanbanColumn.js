@@ -2,7 +2,7 @@ import React from 'react';
 import TicketCard from './TicketCard'; // Component to display individual tickets
 
 const priorityIcons = {
-  0: '/icons/icons_FEtask/No-priority.svg',
+  0: "/icons/icons_FEtask/No-priority.svg",
   1: '/icons/icons_FEtask/Low_Priority.svg',
   2: '/icons/icons_FEtask/Medium_Priority.svg',
   3: '/icons/icons_FEtask/High_Priority.svg',
@@ -27,6 +27,8 @@ const priorityLabels = {
 
 const KanbanColumn = ({ title, tickets, count, groupBy }) => {
   const priorityIcon = groupBy === 'priority' && priorityIcons[title];
+  console.log(title)
+  console.log('Priority Icon:', priorityIcon);
   const statusIcon = groupBy === 'status' && statusIcons[title];
   const userProfile = groupBy === 'userId';
   const displayTitle = groupBy === 'priority' ? priorityLabels[title] : title;
@@ -37,12 +39,11 @@ const KanbanColumn = ({ title, tickets, count, groupBy }) => {
       <div className="titleHead">
         <h3 style={{ textAlign: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }} className='titlecol'>
           {priorityIcon && (
-            <span
+            <img
               src={priorityIcon}
               alt={`Priority ${displayTitle}`}
-              style={{ width: '20px', height: '20px', marginRight: '8px' }}
-            >
-              </span>
+              style={{ width: '30px', height: '30px', marginRight: '8px' }}
+            />
           )}
           {statusIcon && (
             <img
